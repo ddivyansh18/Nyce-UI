@@ -1,44 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --theme-green: rgba(34, 197, 94, 0.4);
-  --theme-gray: rgba(15, 28, 39, 0.1);
-  --theme-yellow: rgba(253, 224, 71, 0.4);
-  --theme-red: rgba(239, 68, 68, 0.4);
-  --theme-blue: rgba(56, 189, 248, 0.4);
-  --theme-purple: rgba(99, 102, 241, 0.2);
-  --theme-black: rgb(16, 14, 9);
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-.material-icons-outlined,
-.material-icons.material-icons--outlined {
-  font-family: "Material Icons Outlined";
-}
-
-.column-container {
-  margin: auto;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+@import url("../default.css");
 
 .alert {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0.5rem 0;
   font-size: 1rem;
   border-radius: 4px;
   max-width: fit-content;

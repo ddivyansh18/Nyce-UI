@@ -1,35 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --theme-green: rgba(34, 197, 94, 0.4);
-  --theme-gray: rgba(15, 28, 39, 0.1);
-  --theme-yellow: rgba(253, 224, 71, 0.4);
-  --theme-red: rgba(239, 68, 68, 0.4);
-  --theme-blue: rgba(56, 189, 248, 0.4);
-  --theme-black: rgb(16, 14, 9);
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-.row-container {
-  margin: auto;
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
+@import url(../default.css);
 
 .avatar {
-  margin: 0.8rem;
   border-radius: 50%;
   outline: 1px solid var(--theme-black);
 }
