@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --theme-green: rgba(34, 197, 94, 0.4);
+  --theme-gray: rgba(15, 28, 39, 0.1);
+  --theme-yellow: rgba(253, 224, 71, 0.4);
+  --theme-red: rgba(239, 68, 68, 0.4);
+  --theme-blue: rgba(56, 189, 248, 0.4);
+  --theme-black: rgb(16, 14, 9);
+  --theme-purple: rgba(99, 102, 241, 0.2);
+  --theme-bright-red: rgb(212, 18, 18);
+  --theme-bright-green: rgb(25, 147, 70);
+  --theme-bright-yellow: rgb(240, 202, 2);
+  --theme-bright-blue: rgb(7, 154, 220);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.row-container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-container {
+  position: relative;
+  height: fit-content;
+}
+
+.avatar {
+  margin: 0.8rem 0.4rem;
+  border-radius: 50%;
+}
+
+.small-avatar {
+  width: 4rem;
+  height: 4rem;
+}
+
+.medium-avatar {
+  width: 6rem;
+  height: 6rem;
+}
+
+.large-avatar {
+  width: 8rem;
+  height: 8rem;
+}
+
+.badge {
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--theme-black);
+  text-align: center;
+}
+
+.red-badge {
+  background-color: var(--theme-bright-red);
+}
+
+.green-badge {
+  background-color: var(--theme-bright-green);
+}
+
+.yellow-badge {
+  background-color: var(--theme-bright-yellow);
+}
