@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url(../default.css);
+
+.avatar {
+  border-radius: 50%;
+  outline: 1px solid var(--theme-black);
+}
+
+.small-avatar {
+  width: 4rem;
+  height: 4rem;
+}
+
+.medium-avatar {
+  width: 6rem;
+  height: 6rem;
+}
+
+.large-avatar {
+  width: 8rem;
+  height: 8rem;
+}

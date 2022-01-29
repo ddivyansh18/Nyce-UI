@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("../default.css");
+
+.badge-container {
+  position: relative;
+  height: fit-content;
+}
+
+.avatar {
+  border-radius: 50%;
+  outline: 1px solid var(--theme-black);
+}
+
+.small-avatar {
+  width: 4rem;
+  height: 4rem;
+}
+
+.medium-avatar {
+  width: 6rem;
+  height: 6rem;
+}
+
+.large-avatar {
+  width: 8rem;
+  height: 8rem;
+}
+
+.avatar-badge {
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  background-color: var(--theme-black);
+  text-align: center;
+}
+
+.icon-badge {
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  background-color: var(--theme-black);
+  text-align: center;
+}
+
+.red-badge {
+  background-color: var(--theme-bright-red);
+}
+
+.green-badge {
+  background-color: var(--theme-bright-green);
+}
+
+.yellow-badge {
+  background-color: var(--theme-bright-yellow);
+}
+
+.material-icons.md-18,
+.material-icons-outlined.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24,
+.material-icons-outlined.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36,
+.material-icons-outlined.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48,
+.material-icons-outlined.md-48 {
+  font-size: 48px;
+}
