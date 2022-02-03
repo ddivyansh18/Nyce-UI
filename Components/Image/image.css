@@ -1,0 +1,29 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+.image-container {
+  display: flex;
+  height: 10rem;
+  width: 50rem;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.square-image {
+  height: 10rem;
+  width: 10rem;
+}
+
+.circular-image {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
