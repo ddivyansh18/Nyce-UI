@@ -1,0 +1,35 @@
+.modal-title {
+  font-weight: 600;
+}
+
+.modal {
+  width: 30rem;
+  height: fit-content;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.2rem;
+}
+
+.modal-text-container {
+  padding-top: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.modal-action-container {
+  padding-top: 0.4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-shadow {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
