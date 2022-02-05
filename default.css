@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --theme-green: rgba(34, 197, 94, 0.4);
+  --theme-gray: rgba(15, 28, 39, 0.1);
+  --theme-yellow: rgba(253, 224, 71, 0.4);
+  --theme-red: rgba(239, 68, 68, 0.4);
+  --theme-blue: rgba(56, 189, 248, 0.4);
+  --theme-black: rgb(16, 14, 9);
+  --theme-purple: rgba(99, 102, 241, 0.2);
+  --theme-bright-red: rgb(212, 18, 18);
+  --theme-bright-green: rgb(25, 147, 70);
+  --theme-bright-yellow: rgb(240, 202, 2);
+  --theme-bright-blue: rgb(7, 154, 220);
+  --theme-bright-purple: rgb(99, 102, 241);
+  --theme-bright-gray: rgb(235, 236, 240);
+  --theme-dark-blue: hsl(212deg 82% 54%);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.column-container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.row-container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.material-icons-outlined,
+.material-icons.material-icons--outlined {
+  font-family: "Material Icons Outlined";
+}
+
+.material-icons.md-18,
+.material-icons-outlined.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24,
+.material-icons-outlined.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36,
+.material-icons-outlined.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48,
+.material-icons-outlined.md-48 {
+  font-size: 48px;
+}
+
+/* positions */
+.relative-position {
+  position: relative;
+}
+
+/* visibility */
+
+.hidden-visibility {
+  visibility: hidden;
+}
+
+.display-none {
+  display: none;
+}
+
+/* z-index */
+
+.z-index-sub-1 {
+  z-index: -1;
+}
+
+.z-index-sub-2 {
+  z-index: -2;
+}
+
+.z-index-sub-3 {
+  z-index: -3;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.z-index-3 {
+  z-index: 3;
+}
+
+.z-index-max {
+  z-index: 2147483647;
+}
+
+/* resposive images */
+
+.width-100-percent {
+  width: 100%;
+}
+
+/* colors */
+.bright-gray-color {
+  color: var(--theme-bright-gray);
+}
+
+.bright-gray-bg {
+  background-color: var(--theme-bright-gray);
+}
+
+.white-color {
+  color: white;
+}
+
+.white-border {
+  border: 2px solid white;
+}
+
+.green-color {
+  color: var(--theme-green);
+}
+
+.green-border {
+  border: 2px solid var(--theme-green);
+}
+
+.gray-color {
+  color: var(--theme-gray);
+}
+
+.gray-border {
+  border: 2px solid var(--theme-gray);
+}
+
+.yellow-color {
+  color: var(--theme-yellow);
+}
+
+.yellow-border {
+  border: 2px solid var(--theme-yellow);
+}
+
+.red-color {
+  color: var(--theme-red);
+}
+
+.red-border {
+  border: 2px solid var(--theme-red);
+}
+
+.blue-color {
+  color: var(--theme-blue);
+}
+
+.blue-border {
+  border: 2px solid var(--theme-blue);
+}
+
+.black-color {
+  color: var(--theme-black);
+}
+
+.black-border {
+  border: 2px solid var(--theme-black);
+}
+
+.purple-color {
+  color: var(--theme-purple);
+}
+
+.purple-border {
+  border: 2px solid var(--theme-purple);
+}
+
+.bright-red-color {
+  color: var(--theme-bright-red);
+}
+
+.bright-red-border {
+  border: 2px solid var(--theme-bright-red);
+}
+
+.bright-green-color {
+  color: var(--theme-bright-green);
+}
+
+.bright-green-border {
+  border: 2px solid var(--theme-bright-green);
+}
+
+.bright-yellow-color {
+  color: var(--theme-bright-yellow);
+}
+
+.bright-yellow-border {
+  border: 2px solid var(--theme-bright-yellow);
+}
+
+.bright-blue-color {
+  color: var(--theme-bright-blue);
+}
+
+.bright-blue-border {
+  border: 2px solid var(--theme-bright-blue);
+}
+
+.bright-purple-color {
+  color: var(--theme-bright-purple);
+}
+
+.bright-purple-border {
+  border: 2px solid var(--theme-bright-purple);
+}
+
+.dark-blue-color {
+  color: var(--theme-dark-blue);
+}
+
+.dark-blue-border {
+  border: 2px solid var(--theme-dark-blue);
+}
+
+.green-bg {
+  background-color: var(--theme-green);
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.gray-bg {
+  background-color: gray;
+}
+
+.light-gray-bg {
+  background-color: lightgray;
+}
+
+.yellow-bg {
+  background-color: var(--theme-yellow);
+}
+
+.red-bg {
+  background-color: var(--theme-red);
+}
+
+.blue-bg {
+  background-color: var(--theme-blue);
+}
+
+.purple-bg {
+  background-color: var(--theme-purple);
+}
+
+.bright-red-bg {
+  background-color: var(--theme-bright-red);
+}
+
+.bright-blue-bg {
+  background-color: var(--theme-bright-blue);
+}
+
+.bright-green-bg {
+  background-color: var(--theme-bright-green);
+}
+
+.bright-yellow-bg {
+  background-color: var(--theme-bright-yellow);
+}
+
+.bright-purple-bg {
+  background-color: var(--theme-bright-purple);
+}
+
+.black-bg {
+  background-color: var(--theme-black);
+}
+
+.dark-blue-bg {
+  background-color: var(--theme-dark-blue);
+}
