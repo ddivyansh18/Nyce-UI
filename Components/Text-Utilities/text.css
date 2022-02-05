@@ -1,0 +1,14 @@
+.small-text {
+  font-size: 0.6rem;
+}
+
+.gray-text {
+  color: gray;
+}
+
+.centered-text-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
