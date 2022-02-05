@@ -1,0 +1,36 @@
+.default-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.list-item {
+  padding: 0.5rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.notification-container {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  height: fit-content;
+  padding: 0.5rem;
+}
+
+.notification-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification-image-container img {
+  width: 100%;
+}
+
+.notification-title {
+  font-weight: 600;
+}
+
+.notification-shadow {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
