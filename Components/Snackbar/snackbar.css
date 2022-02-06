@@ -1,0 +1,30 @@
+.snackbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  min-width: 15rem;
+}
+
+.snackbar {
+  padding: 0.5rem;
+  opacity: 1;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.snackbar-text {
+  font-weight: 500;
+}
+
+.snackbar-action {
+  padding-left: 0.7rem;
+  font-weight: 600;
+}
+
+.close-snackbar-icon {
+  padding-left: 0.2rem;
+  justify-self: flex-end;
+}

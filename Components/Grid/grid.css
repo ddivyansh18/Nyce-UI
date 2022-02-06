@@ -1,0 +1,38 @@
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: fit-content;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: fit-content;
+}
+
+.grid-item-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.grid-item-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.grid-item-3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.grid-item-example {
+  width: 20rem;
+  height: 10rem;
+}
+
+.grid-item-example-2 {
+  width: 15rem;
+  height: 10rem;
+}
