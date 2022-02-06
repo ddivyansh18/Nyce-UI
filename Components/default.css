@@ -22,6 +22,8 @@
   --theme-bright-purple: rgb(99, 102, 241);
   --theme-bright-gray: rgb(235, 236, 240);
   --theme-dark-blue: hsl(212deg 82% 54%);
+  --theme-dark-purple: #bb86fc;
+  --theme-dark-gray: #333;
 }
 
 body {
@@ -240,6 +242,22 @@ body {
 
 .dark-blue-border {
   border: 2px solid var(--theme-dark-blue);
+}
+
+.dark-purple-color {
+  color: var(--theme-dark-purple);
+}
+
+.dark-purple-bg {
+  background-color: var(--theme-dark-purple);
+}
+
+.dark-gray-color {
+  color: var(--theme-dark-gray);
+}
+
+.dark-gray-bg {
+  background-color: var(--theme-dark-gray);
 }
 
 .green-bg {
