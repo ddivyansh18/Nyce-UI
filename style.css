@@ -3,10 +3,6 @@
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-/* * {
-  outline: 1px solid red;
-} */
-
 .navigation-links-container a:link,
 .navigation-links-container a:visited,
 .navigation-links-container a:hover,
@@ -46,19 +42,16 @@
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: white;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--theme-black);
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: grey;
 }
 
 /* Extra small devices (phones, 600px and down) */
