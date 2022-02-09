@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../default.css" />
+    <link rel="stylesheet" href="snackbar.css" />
+  </head>
+  <body>
+    <div class="column-container">
+      <h3>Snackbar</h3>
+      <div class="snackbar">
+        <div class="snackbar-container white-color dark-gray-bg">
+          <div class="snackbar-text">Can't send photo. Retry in 5 seconds.</div>
+          <div class="snackbar-action dark-purple-color">RETRY</div>
+          <div class="material-icons-outlined close-snackbar-icon">cancel</div>
+        </div>
+      </div>
+
+      <div class="snackbar">
+        <div class="snackbar-container white-color dark-blue-bg">
+          <div>Message Sent Successfully</div>
+          <div class="snackbar-action white-color">UNDO</div>
+          <div class="material-icons-outlined close-snackbar-icon">cancel</div>
+        </div>
+      </div>
+
+      <div class="snackbar">
+        <div class="snackbar-container white-color bright-red-bg">
+          <div class="material-icons-outlined">warning_amber</div>
+          <div class="snackbar-text">Network Error</div>
+          <div class="snackbar-action white-color">RETRY</div>
+          <div class="material-icons-outlined close-snackbar-icon">close</div>
+        </div>
+      </div>
+
+      <div class="snackbar">
+        <div class="snackbar-container white-color bright-purple-bg">
+          <div class="material-icons-outlined">info</div>
+          <div class="snackbar-text">Order Successful !!</div>
+          <div class="display-none">INFO</div>
+          <div class="material-icons-outlined close-snackbar-icon">close</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

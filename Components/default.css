@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
 }
 
 :root {
@@ -75,6 +74,14 @@ body {
 /* positions */
 .relative-position {
   position: relative;
+}
+
+.fixed-position {
+  position: fixed;
+}
+
+.absolute-position {
+  position: absolute;
 }
 
 /* visibility */

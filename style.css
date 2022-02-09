@@ -1,3 +1,11 @@
+.home-page-link,
+.home-page-link:link,
+.home-page-link:visited,
+.home-page-link:hover,
+.home-page-link:active {
+  text-decoration: none;
+}
+
 .navigation-shadow {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -30,6 +38,8 @@
 
 .hero-section {
   height: 85vh;
+  text-align: center;
+  padding: 0.5rem;
 }
 
 .github-logo {
@@ -54,9 +64,58 @@
   background: grey;
 }
 
+.mobile-link-item {
+  right: 1rem;
+  top: 0rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Common Documentation Page Classes */
+.component-list-item {
+  width: 100%;
+  border: 1px solid var(--theme-black);
+}
+
+.component-list-item:hover {
+  background-color: white;
+  color: var(--theme-black);
+}
+
+.selected-list-item {
+  background-color: white;
+  color: var(--theme-black);
+  font-weight: bold;
+}
+
+.page-content-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.component-list-container {
+  top: 3.2rem;
+  height: 100vh;
+  background-color: var(--theme-black);
+  width: 20%;
+}
+
+.component-details-container {
+  text-align: center;
+  padding-top: 5rem;
+  width: 60%;
+}
+
+.code-container {
+  text-align: start;
+  max-width: 100%;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .navigation-links-container {
+  .desktop-link-item {
     display: none;
   }
 
@@ -78,12 +137,21 @@
   .footer {
     padding: 1rem;
   }
+
+  .component-list-button {
+    display: initial;
+  }
+
+  .component-list-container {
+    width: 100vw;
+    position: absolute;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-  .landing-bg-img {
-    background-image: url(../landing-background.jpg);
+  .desktop-link-item {
+    display: none;
   }
 
   .hero-icon {
@@ -101,12 +169,25 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .component-list-button {
+    display: absolute;
+  }
+
+  .component-list-container {
+    min-width: 100vw;
+    position: absolute;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .landing-bg-img {
-    background-image: url(../landing-background.jpg);
+@media only screen and (min-width: 768px) {
+  .desktop-link-item {
+    display: static;
+  }
+
+  .component-list-button {
+    display: none;
   }
 
   .hero-section {
@@ -119,22 +200,35 @@
     width: 100%;
     justify-content: space-evenly;
   }
+
+  .component-details-container {
+    padding-left: 1rem;
+  }
+
+  .component-list-container {
+    position: fixed;
+    display: initial;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-  .landing-bg-img {
-    background-image: url(../landing-background.jpg);
+@media only screen and (min-width: 992px) {
+  .mobile-link-item {
+    display: none;
   }
 
   .hero-section {
     height: 100vh;
   }
+
+  .component-details-container {
+    padding-left: 1rem;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
-  .landing-bg-img {
-    background-image: url(../landing-background.jpg);
+@media only screen and (min-width: 1200px) {
+  .component-details-container {
+    padding-left: 1.5rem;
   }
 }

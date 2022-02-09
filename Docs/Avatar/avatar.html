@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar</title>
+    <link rel="icon" href="../../hero-icon.svg" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../nyce.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="avatar.css" />
+    <script src="../../app.js" defer></script>
+  </head>
+  <body>
+    <nav
+      class="navigation fixed-position black-bg white-color navigation-shadow width-100-percent"
+    >
+      <a href="../../index.html" class="home-page-link">
+        <div class="navigation-title-container white-color">
+          <div class="material-icons-outlined">widgets</div>
+          <h1>Nyce UI</h1>
+        </div>
+      </a>
+      <ul class="navigation-links-container">
+        <li class="navigation-link-item desktop-link-item">
+          <div class="material-icons-outlined">file_download</div>
+          <a href="www.google.com" target="_blank">
+            <h4 class="pillbox-button white-bg-black-color">GET Nyce</h4>
+          </a>
+        </li>
+
+        <li class="navigation-link-item">
+          <a href="../Avatar/avatar.html">
+            <div class="button pillbox-button white-bg black-color">
+              <h4>Docs</h4>
+            </div>
+          </a>
+        </li>
+
+        <li class="navigation-link-item component-list-button">
+          <button
+            class="button pillbox-button white-bg black-color mobile-link-item component-list-toggle absolute-position"
+          >
+            <div class="material-icons-outlined">menu</div>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="page-content-container">
+      <aside class="component-list-container fixed-position z-index-2">
+        <ul class="default-list">
+          <a href="../Avatar/avatar.html">
+            <li
+              class="component-list-item selected-list-item list-item black-bg white-color"
+            >
+              Avatar
+            </li>
+          </a>
+
+          <a href="../Alert/alert.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Alert
+            </li>
+          </a>
+
+          <a href="../Badge/badge.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Badge
+            </li>
+          </a>
+
+          <a href="../Button/button.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Button
+            </li>
+          </a>
+
+          <a href="../Card/card.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Card
+            </li>
+          </a>
+
+          <a href="../Image/image.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Image
+            </li>
+          </a>
+
+          <a href="../Input/input.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Input
+            </li>
+          </a>
+
+          <a href="../Input/input.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Text Utilities
+            </li>
+          </a>
+
+          <a href="../List/list.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Lists
+            </li>
+          </a>
+
+          <a href="../Navigation/navigation.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Navigation
+            </li>
+          </a>
+
+          <a href="../Modal/modal.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Modal
+            </li>
+          </a>
+
+          <a href="../Rating/rating.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Rating
+            </li>
+          </a>
+
+          <a href="../Snackbar/snackbar.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Snackbar
+            </li>
+          </a>
+
+          <a href="../Grid/grid.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Grid
+            </li>
+          </a>
+        </ul>
+      </aside>
+
+      <div class="column-container component-details-container">
+        <h1>Avatar</h1>
+        <p>
+          Avatar are images which can be used as user profile pictures, icons,
+          brand logos etc.
+        </p>
+        <p>
+          To style as an image as avatar, we need to add class "avatar" to the
+          image.
+        </p>
+
+        <img
+          src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/sloth_lazybones_sluggard_avatar-512.png"
+          alt="avatar"
+          class="avatar medium-avatar"
+        />
+
+        <br />
+
+        <h2>Sizes</h2>
+        <p>
+          Avatars can be of different sizes, this is achieved using
+          "small-avatar", "medium-avatar" and "large-avatar" classes.
+        </p>
+        <section class="row-container">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/sloth_lazybones_sluggard_avatar-512.png"
+            alt="small-avatar"
+            class="avatar small-avatar"
+          />
+
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/sloth_lazybones_sluggard_avatar-512.png"
+            alt="medium-avatar"
+            class="avatar medium-avatar"
+          />
+
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/sloth_lazybones_sluggard_avatar-512.png"
+            alt="large-avatar"
+            class="avatar large-avatar"
+          />
+        </section>
+
+        <br />
+
+        <h2>Code Snippet</h2>
+        <section class="code-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fddivyansh18%2FNyce-UI%2Fblob%2Fdev%2FComponents%2FAvatar%2Favatar.html%23L11-L29&style=github&showBorder=on&showCopy=on"></script>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
