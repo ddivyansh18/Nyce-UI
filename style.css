@@ -18,6 +18,13 @@
   text-decoration: none;
 }
 
+.default-list a:link,
+.default-list a:visited,
+.default-list a:hover,
+.default-list a:active {
+  text-decoration: none;
+}
+
 .landing-bg-img {
   background-image: url(../landing-background.jpg);
 }
