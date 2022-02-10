@@ -79,6 +79,14 @@
   align-items: center;
 }
 
+.fixed-navigation-component {
+  width: 30rem;
+}
+
+.fixed-navigation-text-padding {
+  padding-top: 3rem;
+}
+
 /* Common Documentation Page Classes */
 .component-list-item {
   width: 100%;

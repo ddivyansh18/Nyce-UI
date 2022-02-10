@@ -5,38 +5,191 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid</title>
-    <link rel="stylesheet" href="../default.css" />
-    <link rel="stylesheet" href="grid.css" />
+    <link rel="icon" href="../../hero-icon.svg" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../nyce.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="avatar.css" />
+    <script src="../../app.js" defer></script>
   </head>
   <body>
-    <div class="column-container">
-      <h1>Grid Examples</h1>
+    <nav
+      class="navigation fixed-position black-bg white-color navigation-shadow width-100-percent z-index-2"
+    >
+      <a href="../../index.html" class="home-page-link">
+        <div class="navigation-title-container white-color">
+          <div class="material-icons-outlined">widgets</div>
+          <h1>Nyce UI</h1>
+        </div>
+      </a>
+      <ul class="navigation-links-container">
+        <li class="navigation-link-item desktop-link-item">
+          <div class="material-icons-outlined">file_download</div>
+          <a href="www.google.com" target="_blank">
+            <h4 class="pillbox-button white-bg-black-color">GET Nyce</h4>
+          </a>
+        </li>
 
-      <h2>2 items in grid</h2>
-      <div class="grid-2 black-border">
-        <div class="bright-blue-bg white-color grid-item-1 grid-item-example">
-          Item 1
-        </div>
-        <div class="bright-green-bg white-color grid-item-2 grid-item-example">
-          Item 2
-        </div>
-      </div>
+        <li class="navigation-link-item">
+          <a href="../Avatar/avatar.html">
+            <div class="button pillbox-button white-bg black-color">
+              <h4>Docs</h4>
+            </div>
+          </a>
+        </li>
 
-      <h2>3 items in grid</h2>
-      <div class="grid-3 black-border">
-        <div class="bright-blue-bg white-color grid-item-1 grid-item-example-2">
-          Item 1
+        <li class="navigation-link-item component-list-button">
+          <button
+            class="button pillbox-button white-bg black-color mobile-link-item component-list-toggle absolute-position"
+          >
+            <div class="material-icons-outlined">menu</div>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="page-content-container">
+      <aside class="component-list-container fixed-position z-index-2">
+        <ul class="default-list">
+          <a href="../Avatar/avatar.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Avatar
+            </li>
+          </a>
+
+          <a href="../Alert/alert.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Alert
+            </li>
+          </a>
+
+          <a href="../Badge/badge.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Badge
+            </li>
+          </a>
+
+          <a href="../Button/button.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Button
+            </li>
+          </a>
+
+          <a href="../Card/card.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Card
+            </li>
+          </a>
+
+          <a href="../Image/image.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Image
+            </li>
+          </a>
+
+          <a href="../Input/input.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Input
+            </li>
+          </a>
+
+          <a href="../Text-Utilities/text.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Text Utilities
+            </li>
+          </a>
+
+          <a href="../List/list.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Lists
+            </li>
+          </a>
+
+          <a href="../Navigation/navigation.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Navigation
+            </li>
+          </a>
+
+          <a href="../Modal/modal.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Modal
+            </li>
+          </a>
+
+          <a href="../Rating/rating.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Rating
+            </li>
+          </a>
+
+          <a href="../Snackbar/snackbar.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Snackbar
+            </li>
+          </a>
+
+          <a href="../Grid/grid.html">
+            <li
+              class="component-list-item selected-list-item list-item black-bg white-color"
+            >
+              Grid
+            </li>
+          </a>
+        </ul>
+      </aside>
+
+      <div class="column-container component-details-container">
+        <h1>Grid</h1>
+        <p>
+          A simplified grid can be used to quickly arrange items in a grid
+          container.
+        </p>
+
+        <h2>2 items in grid</h2>
+        <div class="grid-2 black-border">
+          <div class="bright-blue-bg white-color grid-item-1 grid-item-example">
+            Item 1
+          </div>
+          <div
+            class="bright-green-bg white-color grid-item-2 grid-item-example"
+          >
+            Item 2
+          </div>
         </div>
-        <div
-          class="bright-green-bg white-color grid-item-2 grid-item-example-2"
-        >
-          Item 2
+
+        <h2>3 items in grid</h2>
+        <div class="grid-3 black-border">
+          <div
+            class="bright-blue-bg white-color grid-item-1 grid-item-example-2"
+          >
+            Item 1
+          </div>
+          <div
+            class="bright-green-bg white-color grid-item-2 grid-item-example-2"
+          >
+            Item 2
+          </div>
+          <div
+            class="bright-yellow-bg white-color grid-item-3 grid-item-example-2"
+          >
+            Item 3
+          </div>
         </div>
-        <div
-          class="bright-yellow-bg white-color grid-item-3 grid-item-example-2"
-        >
-          Item 3
-        </div>
+
+        <br />
+
+        <h2>Code Snippet</h2>
+        <section class="code-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fddivyansh18%2FNyce-UI%2Fblob%2Fdev%2FComponents%2FGrid%2Fgrid.html%23L12-L41&style=github&showBorder=on&showCopy=on"></script>
+        </section>
       </div>
     </div>
   </body>
