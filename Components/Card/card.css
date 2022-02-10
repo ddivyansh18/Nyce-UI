@@ -129,14 +129,14 @@
 }
 
 .card-button {
-  height: 2.5rem;
-  padding: 0rem 2rem;
-  padding-top: 0.4rem;
+  padding: 1rem 1rem;
   display: flex;
   align-content: center;
   justify-content: center;
-  width: 12rem;
-  font-weight: 500;
+  width: fit-content;
+  font-weight: 700;
+  font: inherit;
+  font-size: small;
 }
 
 .card-shadow {
