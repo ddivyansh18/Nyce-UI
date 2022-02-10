@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link rel="icon" href="../../hero-icon.svg" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../nyce.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="avatar.css" />
+    <script src="../../app.js" defer></script>
+  </head>
+  <body>
+    <nav
+      class="navigation fixed-position black-bg white-color navigation-shadow width-100-percent z-index-2"
+    >
+      <a href="../../index.html" class="home-page-link">
+        <div class="navigation-title-container white-color">
+          <div class="material-icons-outlined">widgets</div>
+          <h1>Nyce UI</h1>
+        </div>
+      </a>
+      <ul class="navigation-links-container">
+        <li class="navigation-link-item desktop-link-item">
+          <div class="material-icons-outlined">file_download</div>
+          <a href="www.google.com" target="_blank">
+            <h4 class="pillbox-button white-bg-black-color">GET Nyce</h4>
+          </a>
+        </li>
+
+        <li class="navigation-link-item">
+          <a href="../Avatar/avatar.html">
+            <div class="button pillbox-button white-bg black-color">
+              <h4>Docs</h4>
+            </div>
+          </a>
+        </li>
+
+        <li class="navigation-link-item component-list-button">
+          <button
+            class="button pillbox-button white-bg black-color mobile-link-item component-list-toggle absolute-position"
+          >
+            <div class="material-icons-outlined">menu</div>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="page-content-container">
+      <aside class="component-list-container fixed-position z-index-2">
+        <ul class="default-list">
+          <a href="../Avatar/avatar.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Avatar
+            </li>
+          </a>
+
+          <a href="../Alert/alert.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Alert
+            </li>
+          </a>
+
+          <a href="../Badge/badge.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Badge
+            </li>
+          </a>
+
+          <a href="../Button/button.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Button
+            </li>
+          </a>
+
+          <a href="../Card/card.html">
+            <li
+              class="component-list-item selected-list-item list-item black-bg white-color"
+            >
+              Card
+            </li>
+          </a>
+
+          <a href="../Image/image.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Image
+            </li>
+          </a>
+
+          <a href="../Input/input.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Input
+            </li>
+          </a>
+
+          <a href="../Input/input.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Text Utilities
+            </li>
+          </a>
+
+          <a href="../List/list.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Lists
+            </li>
+          </a>
+
+          <a href="../Navigation/navigation.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Navigation
+            </li>
+          </a>
+
+          <a href="../Modal/modal.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Modal
+            </li>
+          </a>
+
+          <a href="../Rating/rating.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Rating
+            </li>
+          </a>
+
+          <a href="../Snackbar/snackbar.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Snackbar
+            </li>
+          </a>
+
+          <a href="../Grid/grid.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Grid
+            </li>
+          </a>
+        </ul>
+      </aside>
+
+      <div class="column-container component-details-container">
+        <div class="column-container">
+          <h1>Cards</h1>
+          <p>
+            Cards can be used to convey information and related actions
+            regarding a product, article or object.
+          </p>
+          <p>
+            These cards are highly customizable and can be easily modified
+            according to use case.
+          </p>
+          <p>Following type of cards are supported:</p>
+
+          <h2>Cards With Badges</h2>
+
+          <div class="card-row-container">
+            <div class="card card-default-shadow column-container">
+              <div class="card-extras">
+                <div class="card-badge bright-red-bg white-color">NEW !</div>
+                <div
+                  class="material-icons-outlined md-36 dismiss-button bright-red-color hidden-visibility"
+                >
+                  cancel
+                </div>
+              </div>
+              <div class="card-image-container-column">
+                <img
+                  src="https://cdn.pixabay.com/photo/2019/12/16/22/08/sky-4700394_960_720.jpg"
+                  alt=""
+                  class="card-image-column width-100-percent"
+                />
+                <div class="text-overlay-column hidden-visibility">
+                  <div class="overlay-title-text white-color">
+                    Aurora Borealis
+                  </div>
+                  <div class="overlay-subtitle-text white-color">
+                    Wonder of Nature
+                  </div>
+                </div>
+              </div>
+              <div class="text-items-container width-100-percent">
+                <div class="card-title-text">Aurora Borealis</div>
+                <div class="card-subtitle-text">Wonder of Nature</div>
+              </div>
+              <div class="width-100-percent">
+                <div class="action-buttons row-container">
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    BUY NOW
+                  </button>
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    + TO CART
+                  </button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons-outlined"> favorite_border </span>
+                  <span class="material-icons-outlined"> share </span>
+                  <span class="material-icons-outlined"> more_vert </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-default-shadow column-container">
+              <div class="card-extras">
+                <div class="card-badge bright-yellow-bg black-color">
+                  SALE !
+                </div>
+                <div
+                  class="material-icons-outlined md-36 dismiss-button bright-red-color hidden-visibility"
+                >
+                  cancel
+                </div>
+              </div>
+              <div class="card-image-container-column">
+                <img
+                  src="https://cdn.pixabay.com/photo/2019/12/16/22/08/sky-4700394_960_720.jpg"
+                  alt=""
+                  class="card-image-column width-100-percent"
+                />
+                <div class="text-overlay-column hidden-visibility">
+                  <div class="overlay-title-text white-color">
+                    Aurora Borealis
+                  </div>
+                  <div class="overlay-subtitle-text white-color">
+                    Wonder of Nature
+                  </div>
+                </div>
+              </div>
+              <div class="text-items-container width-100-percent">
+                <div class="card-title-text">Aurora Borealis</div>
+                <div class="card-subtitle-text">Wonder of Nature</div>
+              </div>
+              <div class="width-100-percent">
+                <div class="action-buttons row-container">
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    BUY NOW
+                  </button>
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    + TO CART
+                  </button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons-outlined"> favorite_border </span>
+                  <span class="material-icons-outlined"> share </span>
+                  <span class="material-icons-outlined"> more_vert </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Cards With Dismiss</h2>
+
+          <div class="card-row-container">
+            <div class="card card-default-shadow column-container">
+              <div class="card-extras">
+                <div
+                  class="card-badge bright-red-bg white-color hidden-visibility"
+                >
+                  NEW !
+                </div>
+                <div
+                  class="material-icons-outlined md-36 dismiss-button bright-red-color"
+                >
+                  cancel
+                </div>
+              </div>
+              <div class="card-image-container-column">
+                <img
+                  src="https://cdn.pixabay.com/photo/2019/12/16/22/08/sky-4700394_960_720.jpg"
+                  alt=""
+                  class="card-image-column width-100-percent"
+                />
+                <div class="text-overlay-column hidden-visibility">
+                  <div class="overlay-title-text white-color">
+                    Aurora Borealis
+                  </div>
+                  <div class="overlay-subtitle-text white-color">
+                    Wonder of Nature
+                  </div>
+                </div>
+              </div>
+              <div class="text-items-container width-100-percent">
+                <div class="card-title-text">Aurora Borealis</div>
+                <div class="card-subtitle-text">Wonder of Nature</div>
+              </div>
+              <div class="width-100-percent">
+                <div class="action-buttons row-container">
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    BUY NOW
+                  </button>
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    + TO CART
+                  </button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons-outlined"> favorite_border </span>
+                  <span class="material-icons-outlined"> share </span>
+                  <span class="material-icons-outlined"> more_vert </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-default-shadow column-container">
+              <div class="card-extras">
+                <div
+                  class="card-badge bright-yellow-bg black-color hidden-visibility"
+                >
+                  SALE !
+                </div>
+                <div
+                  class="material-icons-outlined md-36 dismiss-button black-color"
+                >
+                  close
+                </div>
+              </div>
+              <div class="card-image-container-column">
+                <img
+                  src="https://cdn.pixabay.com/photo/2019/12/16/22/08/sky-4700394_960_720.jpg"
+                  alt=""
+                  class="card-image-column width-100-percent"
+                />
+                <div class="text-overlay-column hidden-visibility">
+                  <div class="overlay-title-text white-color">
+                    Aurora Borealis
+                  </div>
+                  <div class="overlay-subtitle-text white-color">
+                    Wonder of Nature
+                  </div>
+                </div>
+              </div>
+              <div class="text-items-container width-100-percent">
+                <div class="card-title-text">Aurora Borealis</div>
+                <div class="card-subtitle-text">Wonder of Nature</div>
+              </div>
+              <div class="width-100-percent">
+                <div class="action-buttons row-container">
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    BUY NOW
+                  </button>
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    + TO CART
+                  </button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons-outlined"> favorite_border </span>
+                  <span class="material-icons-outlined"> share </span>
+                  <span class="material-icons-outlined"> more_vert </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Cards With Text Overlay</h2>
+
+          <div class="card-row-container">
+            <div class="card card-default-shadow column-container">
+              <div class="display-none">
+                <div class="card-badge bright-red-bg white-color">NEW !</div>
+                <div
+                  class="material-icons-outlined md-36 dismiss-button bright-red-color"
+                >
+                  cancel
+                </div>
+              </div>
+              <div class="card-image-container-column">
+                <img
+                  src="https://cdn.pixabay.com/photo/2019/12/16/22/08/sky-4700394_960_720.jpg"
+                  alt=""
+                  class="card-image-column width-100-percent"
+                />
+                <div class="text-overlay-column">
+                  <div class="overlay-title-text white-color">
+                    Aurora Borealis
+                  </div>
+                  <div class="overlay-subtitle-text white-color">
+                    Wonder of Nature
+                  </div>
+                </div>
+              </div>
+              <div class="display-none">
+                <div class="card-title-text">Aurora Borealis</div>
+                <div class="card-subtitle-text">Wonder of Nature</div>
+              </div>
+              <div class="width-100-percent">
+                <div class="action-buttons row-container">
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    BUY NOW
+                  </button>
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    + TO CART
+                  </button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons-outlined"> favorite_border </span>
+                  <span class="material-icons-outlined"> share </span>
+                  <span class="material-icons-outlined"> more_vert </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-default-shadow column-container">
+              <div class="display-none">
+                <div class="card-badge bright-yellow-bg black-color">
+                  SALE !
+                </div>
+                <div
+                  class="material-icons-outlined md-36 dismiss-button bright-red-color hidden-visibility"
+                >
+                  cancel
+                </div>
+              </div>
+              <div class="card-image-container-column">
+                <img
+                  src="https://cdn.pixabay.com/photo/2019/12/16/22/08/sky-4700394_960_720.jpg"
+                  alt=""
+                  class="card-image-column width-100-percent"
+                />
+                <div class="text-overlay-column">
+                  <div class="overlay-title-text white-color">
+                    Aurora Borealis
+                  </div>
+                  <div class="overlay-subtitle-text white-color">
+                    Wonder of Nature
+                  </div>
+                </div>
+              </div>
+              <div class="display-none">
+                <div class="card-title-text">Aurora Borealis</div>
+                <div class="card-subtitle-text">Wonder of Nature</div>
+              </div>
+              <div class="width-100-percent">
+                <div class="action-buttons row-container">
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    BUY NOW
+                  </button>
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    + TO CART
+                  </button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons-outlined"> favorite_border </span>
+                  <span class="material-icons-outlined"> share </span>
+                  <span class="material-icons-outlined"> more_vert </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Text Only Cards</h2>
+
+          <div class="card-row-container">
+            <div class="card card-default-shadow column-container">
+              <div class="display-none">
+                <div
+                  class="card-badge bright-red-bg white-color hidden-visibility"
+                >
+                  NEW !
+                </div>
+                <div
+                  class="material-icons-outlined md-36 dismiss-button bright-red-color"
+                >
+                  cancel
+                </div>
+              </div>
+              <div class="display-none">
+                <img
+                  src="https://cdn.pixabay.com/photo/2019/12/16/22/08/sky-4700394_960_720.jpg"
+                  alt=""
+                  class="card-image-column width-100-percent"
+                />
+                <div class="text-overlay-column hidden-visibility">
+                  <div class="overlay-title-text white-color">
+                    Aurora Borealis
+                  </div>
+                  <div class="overlay-subtitle-text white-color">
+                    Wonder of Nature
+                  </div>
+                </div>
+              </div>
+              <div class="text-items-container width-100-percent">
+                <div class="card-title-text">What is Lorum Ipsum ?</div>
+                <div class="card-subtitle-text">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old.
+                </div>
+              </div>
+              <div class="width-100-percent">
+                <div class="display-none">
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    BUY NOW
+                  </button>
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    + TO CART
+                  </button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons-outlined"> favorite_border </span>
+                  <span class="material-icons-outlined"> share </span>
+                  <span class="material-icons-outlined"> more_vert </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-default-shadow column-container">
+              <div class="display-none">
+                <div
+                  class="card-badge bright-yellow-bg black-color hidden-visibility"
+                >
+                  SALE !
+                </div>
+                <div
+                  class="material-icons-outlined md-36 dismiss-button black-color"
+                >
+                  close
+                </div>
+              </div>
+              <div class="display-none">
+                <img
+                  src="https://cdn.pixabay.com/photo/2019/12/16/22/08/sky-4700394_960_720.jpg"
+                  alt=""
+                  class="card-image-column width-100-percent"
+                />
+                <div class="text-overlay-column hidden-visibility">
+                  <div class="overlay-title-text white-color">
+                    Aurora Borealis
+                  </div>
+                  <div class="overlay-subtitle-text white-color">
+                    Wonder of Nature
+                  </div>
+                </div>
+              </div>
+              <div class="text-items-container width-100-percent">
+                <div class="card-title-text">Aurora Borealis</div>
+                <div class="card-subtitle-text">
+                  Auroras are the result of disturbances in the magnetosphere
+                  caused by solar wind. These disturbances alter the
+                  trajectories of charged particles in the magnetospheric
+                  plasma. These particles, mainly electrons and protons,
+                  precipitate into the upper atmosphere
+                  (thermosphere/exosphere).
+                </div>
+              </div>
+              <div class="width-100-percent">
+                <div class="display-none">
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    BUY NOW
+                  </button>
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    + TO CART
+                  </button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons-outlined"> favorite_border </span>
+                  <span class="material-icons-outlined"> share </span>
+                  <span class="material-icons-outlined"> more_vert </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Vertical/Horizontal Cards</h2>
+
+          <div class="card-row-container">
+            <div class="card card-default-shadow column-container">
+              <div class="display-none">
+                <div class="card-badge bright-red-bg white-color">NEW !</div>
+                <div
+                  class="material-icons-outlined md-36 dismiss-button bright-red-color"
+                >
+                  cancel
+                </div>
+              </div>
+              <div class="card-image-container-column">
+                <img
+                  src="https://images.unsplash.com/photo-1525215351243-2ba501f3442c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+                  alt=""
+                  class="card-image-column width-100-percent"
+                />
+                <div class="display-none">
+                  <div class="overlay-title-text white-color">
+                    Aurora Borealis
+                  </div>
+                  <div class="overlay-subtitle-text white-color">
+                    Wonder of Nature
+                  </div>
+                </div>
+              </div>
+              <div class="text-items-container width-100-percent">
+                <div class="card-title-text">Milky Way</div>
+                <div class="card-subtitle-text">
+                  The Milky Way is the galaxy that includes our Solar System,
+                  with the name describing the galaxy's appearance from Earth
+                </div>
+              </div>
+              <div class="width-100-percent">
+                <div class="display-none">
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    BUY NOW
+                  </button>
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    + TO CART
+                  </button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons-outlined"> favorite_border </span>
+                  <span class="material-icons-outlined"> share </span>
+                  <span class="material-icons-outlined"> more_vert </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="horizontal-card card-default-shadow">
+              <div class="display-none">
+                <div class="card-badge bright-yellow-bg black-color">
+                  SALE !
+                </div>
+                <div
+                  class="material-icons-outlined md-36 dismiss-button bright-red-color hidden-visibility"
+                >
+                  cancel
+                </div>
+              </div>
+              <div class="card-image-container-horizontal">
+                <img
+                  src="https://images.unsplash.com/photo-1525215351243-2ba501f3442c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+                  alt=""
+                  class="card-image-horizontal width-100-percent"
+                />
+                <div class="display-none">
+                  <div class="overlay-title-text white-color">
+                    Aurora Borealis
+                  </div>
+                  <div class="overlay-subtitle-text white-color">
+                    Wonder of Nature
+                  </div>
+                </div>
+              </div>
+              <div class="text-items-container-horizontal">
+                <div class="card-title-text">Milky Way</div>
+                <div class="card-subtitle-text">
+                  The Milky Way is the galaxy that includes our Solar System,
+                  with the name describing the galaxy's appearance from Earth
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons-outlined"> favorite_border </span>
+                  <span class="material-icons-outlined"> share </span>
+                  <span class="material-icons-outlined"> more_vert </span>
+                </div>
+              </div>
+              <div>
+                <div class="display-none">
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    BUY NOW
+                  </button>
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    + TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Cards With Shadow</h2>
+
+          <div class="card-row-container">
+            <div class="card column-container card-shadow">
+              <div class="card-extras">
+                <div class="card-badge bright-red-bg white-color">NEW !</div>
+                <div
+                  class="material-icons-outlined md-36 dismiss-button bright-red-color hidden-visibility"
+                >
+                  cancel
+                </div>
+              </div>
+              <div class="card-image-container-column">
+                <img
+                  src="https://cdn.pixabay.com/photo/2019/12/16/22/08/sky-4700394_960_720.jpg"
+                  alt=""
+                  class="card-image-column width-100-percent"
+                />
+                <div class="text-overlay-column hidden-visibility">
+                  <div class="overlay-title-text white-color">
+                    Aurora Borealis
+                  </div>
+                  <div class="overlay-subtitle-text white-color">
+                    Wonder of Nature
+                  </div>
+                </div>
+              </div>
+              <div class="text-items-container width-100-percent">
+                <div class="card-title-text">Aurora Borealis</div>
+                <div class="card-subtitle-text">Wonder of Nature</div>
+              </div>
+              <div class="width-100-percent">
+                <div class="action-buttons row-container">
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    BUY NOW
+                  </button>
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    + TO CART
+                  </button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons-outlined"> favorite_border </span>
+                  <span class="material-icons-outlined"> share </span>
+                  <span class="material-icons-outlined"> more_vert </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card column-container card-shadow">
+              <div class="card-extras">
+                <div class="card-badge bright-yellow-bg black-color">
+                  SALE !
+                </div>
+                <div
+                  class="material-icons-outlined md-36 dismiss-button bright-red-color hidden-visibility"
+                >
+                  cancel
+                </div>
+              </div>
+              <div class="card-image-container-column">
+                <img
+                  src="https://cdn.pixabay.com/photo/2019/12/16/22/08/sky-4700394_960_720.jpg"
+                  alt=""
+                  class="card-image-column width-100-percent"
+                />
+                <div class="text-overlay-column hidden-visibility">
+                  <div class="overlay-title-text white-color">
+                    Aurora Borealis
+                  </div>
+                  <div class="overlay-subtitle-text white-color">
+                    Wonder of Nature
+                  </div>
+                </div>
+              </div>
+              <div class="text-items-container width-100-percent">
+                <div class="card-title-text">Aurora Borealis</div>
+                <div class="card-subtitle-text">Wonder of Nature</div>
+              </div>
+              <div class="width-100-percent">
+                <div class="action-buttons row-container">
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    BUY NOW
+                  </button>
+                  <button
+                    class="card-button pillbox-button black-bg white-color"
+                  >
+                    + TO CART
+                  </button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons-outlined"> favorite_border </span>
+                  <span class="material-icons-outlined"> share </span>
+                  <span class="material-icons-outlined"> more_vert </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Code Snippet</h2>
+        <section class="code-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fddivyansh18%2FNyce-UI%2Fblob%2Fdev%2FComponents%2FCard%2Fcard.html%23L21-L594&style=github&showBorder=on&showCopy=on"></script>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

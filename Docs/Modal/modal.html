@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../default.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="../Button/button.css" />
+  </head>
+  <body>
+    <div class="column-container">
+      <h3>Modal</h3>
+
+      <div class="modal red-bg modal-shadow">
+        <div class="modal-title-bar">
+          <div class="modal-title">Are you sure ?</div>
+          <div class="material-icons-outlined md-36">cancel</div>
+        </div>
+        <div class="modal-text-container">
+          This action can't be undone, be sure to check all the details. Don't
+          press back or refresh button while your data is being saved.
+        </div>
+        <div class="modal-action-container">
+          <button
+            class="button card-button pillbox-button white-color black-bg"
+          >
+            Yes
+          </button>
+          <button
+            class="button card-button pillbox-button white-color bright-red-bg"
+          >
+            No
+          </button>
+        </div>
+      </div>
+
+      <div class="modal green-bg modal-shadow">
+        <div class="modal-title-bar">
+          <div class="modal-title">Data saved</div>
+          <div class="material-icons-outlined md-36">cancel</div>
+        </div>
+        <div class="modal-text-container">
+          Your data has been saved, you can safely close this window or exit
+          this tab. This message will automatically be closed in 5 second(s).
+        </div>
+        <div class="display-none">
+          <button
+            class="button card-button pillbox-button white-color black-bg"
+          >
+            Yes
+          </button>
+          <button
+            class="button card-button pillbox-button white-color bright-red-bg"
+          >
+            No
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
