@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modal</title>
+    <link rel="icon" href="../../hero-icon.svg" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -13,58 +14,197 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../default.css" />
-    <link rel="stylesheet" href="modal.css" />
-    <link rel="stylesheet" href="../Button/button.css" />
+    <link rel="stylesheet" href="../../nyce.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="avatar.css" />
+    <script src="../../app.js" defer></script>
   </head>
   <body>
-    <div class="column-container">
-      <h3>Modal</h3>
+    <nav
+      class="navigation fixed-position black-bg white-color navigation-shadow width-100-percent z-index-2"
+    >
+      <a href="../../index.html" class="home-page-link">
+        <div class="navigation-title-container white-color">
+          <div class="material-icons-outlined">widgets</div>
+          <h1>Nyce UI</h1>
+        </div>
+      </a>
+      <ul class="navigation-links-container">
+        <li class="navigation-link-item desktop-link-item">
+          <div class="material-icons-outlined">file_download</div>
+          <a href="www.google.com" target="_blank">
+            <h4 class="pillbox-button white-bg-black-color">GET Nyce</h4>
+          </a>
+        </li>
 
-      <div class="modal red-bg modal-shadow">
-        <div class="modal-title-bar">
-          <div class="modal-title">Are you sure ?</div>
-          <div class="material-icons-outlined md-36">cancel</div>
-        </div>
-        <div class="modal-text-container">
-          This action can't be undone, be sure to check all the details. Don't
-          press back or refresh button while your data is being saved.
-        </div>
-        <div class="modal-action-container">
-          <button
-            class="button card-button pillbox-button white-color black-bg"
-          >
-            Yes
-          </button>
-          <button
-            class="button card-button pillbox-button white-color bright-red-bg"
-          >
-            No
-          </button>
-        </div>
-      </div>
+        <li class="navigation-link-item">
+          <a href="../Avatar/avatar.html">
+            <div class="button pillbox-button white-bg black-color">
+              <h4>Docs</h4>
+            </div>
+          </a>
+        </li>
 
-      <div class="modal green-bg modal-shadow">
-        <div class="modal-title-bar">
-          <div class="modal-title">Data saved</div>
-          <div class="material-icons-outlined md-36">cancel</div>
-        </div>
-        <div class="modal-text-container">
-          Your data has been saved, you can safely close this window or exit
-          this tab. This message will automatically be closed in 5 second(s).
-        </div>
-        <div class="display-none">
+        <li class="navigation-link-item component-list-button">
           <button
-            class="button card-button pillbox-button white-color black-bg"
+            class="button pillbox-button white-bg black-color mobile-link-item component-list-toggle absolute-position"
           >
-            Yes
+            <div class="material-icons-outlined">menu</div>
           </button>
-          <button
-            class="button card-button pillbox-button white-color bright-red-bg"
-          >
-            No
-          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="page-content-container">
+      <aside class="component-list-container fixed-position z-index-2">
+        <ul class="default-list">
+          <a href="../Avatar/avatar.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Avatar
+            </li>
+          </a>
+
+          <a href="../Alert/alert.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Alert
+            </li>
+          </a>
+
+          <a href="../Badge/badge.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Badge
+            </li>
+          </a>
+
+          <a href="../Button/button.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Button
+            </li>
+          </a>
+
+          <a href="../Card/card.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Card
+            </li>
+          </a>
+
+          <a href="../Image/image.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Image
+            </li>
+          </a>
+
+          <a href="../Input/input.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Input
+            </li>
+          </a>
+
+          <a href="../Text-Utilities/text.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Text Utilities
+            </li>
+          </a>
+
+          <a href="../List/list.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Lists
+            </li>
+          </a>
+
+          <a href="../Navigation/navigation.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Navigation
+            </li>
+          </a>
+
+          <a href="../Modal/modal.html">
+            <li
+              class="component-list-item selected-list-item list-item black-bg white-color"
+            >
+              Modal
+            </li>
+          </a>
+
+          <a href="../Rating/rating.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Rating
+            </li>
+          </a>
+
+          <a href="../Snackbar/snackbar.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Snackbar
+            </li>
+          </a>
+
+          <a href="../Grid/grid.html">
+            <li class="component-list-item list-item black-bg white-color">
+              Grid
+            </li>
+          </a>
+        </ul>
+      </aside>
+
+      <div class="column-container component-details-container">
+        <h1>Modal</h1>
+        <p>
+          A modal can serve as a pop-up to alert and make user about significant
+          application state changes.
+        </p>
+
+        <div class="modal red-bg modal-shadow">
+          <div class="modal-title-bar">
+            <div class="modal-title">Are you sure ?</div>
+            <div class="material-icons-outlined md-36">cancel</div>
+          </div>
+          <div class="modal-text-container">
+            This action can't be undone, be sure to check all the details. Don't
+            press back or refresh button while your data is being saved.
+          </div>
+          <div class="modal-action-container">
+            <button
+              class="button card-button pillbox-button white-color black-bg"
+            >
+              Yes
+            </button>
+            <button
+              class="button card-button pillbox-button white-color bright-red-bg"
+            >
+              No
+            </button>
+          </div>
         </div>
+
+        <div class="modal green-bg modal-shadow">
+          <div class="modal-title-bar">
+            <div class="modal-title">Data saved</div>
+            <div class="material-icons-outlined md-36">cancel</div>
+          </div>
+          <div class="modal-text-container">
+            Your data has been saved, you can safely close this window or exit
+            this tab. This message will automatically be closed in 5 second(s).
+          </div>
+          <div class="display-none">
+            <button
+              class="button card-button pillbox-button white-color black-bg"
+            >
+              Yes
+            </button>
+            <button
+              class="button card-button pillbox-button white-color bright-red-bg"
+            >
+              No
+            </button>
+          </div>
+        </div>
+
+        <br />
+
+        <h2>Code Snippet</h2>
+        <section class="code-container">
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fddivyansh18%2FNyce-UI%2Fblob%2Fdev%2FComponents%2FModal%2Fmodal.html%23L21-L69&style=github&showBorder=on&showCopy=on"></script>
+        </section>
       </div>
     </div>
   </body>
