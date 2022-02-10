@@ -29,6 +29,25 @@
   background-image: url(../landing-background.jpg);
 }
 
+.get-nyce-bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./get-nyce-background.jpg);
+}
+
+.import-url {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.get-nyce-text {
+  font-size: 1rem;
+}
+
 .hero-icon {
   width: 25rem;
   height: 25rem;
@@ -55,6 +74,7 @@
   border-radius: 50%;
 }
 
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -69,6 +89,18 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: grey;
+}
+
+/* Text Selection Styling */
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: var(--theme-dark-gray);
+}
+
+::selection {
+  color: white;
+  background: var(--theme-dark-gray);
 }
 
 .mobile-link-item {
