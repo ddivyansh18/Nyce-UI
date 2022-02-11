@@ -25,13 +25,36 @@
   text-decoration: none;
 }
 
+.navigation-height {
+  height: 4rem;
+}
+
 .landing-bg-img {
   background-image: url(../landing-background.jpg);
 }
 
+.get-nyce-bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./get-nyce-background.jpg);
+}
+
+.import-url {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.get-nyce-text {
+  font-size: 1rem;
+}
+
 .hero-icon {
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 .action-container {
@@ -55,6 +78,7 @@
   border-radius: 50%;
 }
 
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -69,6 +93,18 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: grey;
+}
+
+/* Text Selection Styling */
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: var(--theme-dark-gray);
+}
+
+::selection {
+  color: white;
+  background: var(--theme-dark-gray);
 }
 
 .mobile-link-item {
@@ -111,21 +147,28 @@
 }
 
 .component-list-container {
-  top: 3.2rem;
+  display: flex;
+  align-items: flex-end;
+  top: 4rem;
   height: 100vh;
   background-color: var(--theme-black);
   width: 20%;
 }
 
 .component-details-container {
+  margin-left: 15%;
   text-align: center;
   padding-top: 5rem;
-  width: 60%;
+  width: 100%;
 }
 
 .code-container {
   text-align: start;
   max-width: 100%;
+}
+
+.centered-text-container {
+  width: 80%;
 }
 
 /* Extra small devices (phones, 600px and down) */
