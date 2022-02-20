@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alert</title>
+    <title>Rating</title>
     <link rel="icon" href="../../hero-icon.svg" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -21,7 +21,7 @@
   </head>
   <body>
     <nav
-      class="navigation navigation-height fixed-position black-bg white-color navigation-shadow width-100-percent"
+      class="navigation navigation-height fixed-position black-bg white-color navigation-shadow width-100-percent z-index-2"
     >
       <a href="../../index.html" class="home-page-link">
         <div class="navigation-title-container white-color">
@@ -65,9 +65,7 @@
           </a>
 
           <a href="../Alert/alert.html">
-            <li
-              class="component-list-item selected-list-item list-item black-bg white-color"
-            >
+            <li class="component-list-item list-item black-bg white-color">
               Alert
             </li>
           </a>
@@ -145,7 +143,9 @@
           </a>
 
           <a href="../Slider/slider.html">
-            <li class="component-list-item list-item black-bg white-color">
+            <li
+              class="component-list-item selected-list-item list-item black-bg white-color"
+            >
               Slider
             </li>
           </a>
@@ -153,45 +153,23 @@
       </aside>
 
       <div class="column-container component-details-container">
-        <h1>Alert</h1>
-
+        <h1>Slider</h1>
         <p>
-          An alert can be used to notify a user about change in application
-          state.
+          A slider can be used to take user input over a pre-determined valid
+          range.
         </p>
 
-        <p>Following alert prompts are available for use.</p>
+        <h3>Default Slider</h3>
+        <input type="range" min="1" max="100" />
 
-        <div class="column-container">
-          <div class="alert">
-            <span class="material-icons-outlined"> help_outline </span>
-            This is a primary alert
-          </div>
-
-          <div class="alert success-alert">
-            <span class="material-icons-outlined"> check_circle </span>
-            This is a success alert
-          </div>
-
-          <div class="alert info-alert">
-            <span class="material-icons-outlined"> info </span>
-            This is a info alert
-          </div>
-
-          <div class="alert warning-alert">
-            <span class="material-icons"> report_problem </span>
-            This is a warning alert
-          </div>
-
-          <div class="alert error-alert">
-            <span class="material-icons"> dangerous </span>
-            This is a error alert
-          </div>
+        <h3>Styled Slider</h3>
+        <div class="slider-container">
+          <input type="range" min="1" max="100" class="slider" />
         </div>
 
         <h2 class="heading-padding">Code Snippet</h2>
         <section class="code-container">
-          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fddivyansh18%2FNyce-UI%2Fblob%2Fdev%2FComponents%2FAlert%2Falert.html%23L22-L47&style=github&showBorder=on&showCopy=on"></script>
+          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fddivyansh18%2FNyce-UI%2Fblob%2F7a5c006eb60b46f6200518db6c64bd7412b1b980%2FComponents%2FSlider%2Fslider.html%23L12-L20&style=github&showBorder=on&showCopy=on"></script>
         </section>
       </div>
     </div>
