@@ -62,6 +62,10 @@
   justify-content: center;
 }
 
+.heading-padding {
+  padding-top: 2rem;
+}
+
 .footer {
   padding: 1rem;
 }
