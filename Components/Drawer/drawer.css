@@ -1,0 +1,62 @@
+.drawer-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  width: 15rem;
+  height: 23rem;
+  border: 1px solid black;
+  margin: auto;
+  box-shadow: 3px 3px 3px blueviolet;
+  margin-top: 5rem;
+}
+
+.drawer-heading {
+  width: 100%;
+}
+
+.drawer-title {
+  font-size: 1.25rem;
+  padding-left: 0.5rem;
+}
+
+.drawer-subtext {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding-left: 0.5rem;
+}
+
+.drawer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+  height: 100%;
+}
+
+.drawer-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  justify-items: flex-start;
+  padding-left: 0.5rem;
+  border-radius: 10px;
+}
+
+.drawer-item:hover {
+  background-color: rgb(236, 234, 234);
+}
+
+.drawer-item h3 {
+  padding-left: 1rem;
+}
+
+.selected-drawer-item {
+  color: rgba(98, 0, 238, 0.87);
+  background-color: rgba(192, 156, 243, 0.87);
+}
+
+.drawer-item.selected-drawer-item:hover {
+  background-color: rgba(192, 156, 243, 0.87);
+}
