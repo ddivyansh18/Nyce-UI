@@ -1,0 +1,70 @@
+<img src="./hero-icon.svg"> 
+
+# Nyce-UI 
+A contemporary and modern looking component library for all your CSS component needs.
+
+# Installation
+- Just add the following code as the first line in your css file, and that's it !
+```
+@import url("https://nyce-ui.vercel.app/nyce.css");
+```
+- Nyce UI utilies material icons in many of its components, which can be imported as follows
+```
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+```
+
+
+
+# Features
+Nyce-UI comes with the following components :
+- Avatar
+- Alert
+- Badge
+  - Badge on Icons
+  - Badge on Avatars
+- Button
+  - Primary (Default)
+  - Link
+  - Icon
+  - Outline
+  - Floating Action
+  - Pillbox
+  - Tonal
+- Card
+  - Cards with badges
+  - Cards with dismiss
+  - Cards with text overlay
+  - Text only cards
+  - Vertical/Horizontal cards
+  - Cards with shadow
+- Image
+  - Responsive image
+  - Round image
+  - Square image
+- Input
+- Text Utilities
+  - Headings
+  - Small text
+  - Gray text
+  - Center text
+- Lists
+  - Spaced (normal lists)
+  - Stacked (Notification Page)
+- Navigation
+  - Desktop (Simple)
+  - Desktop (Fixed)
+- Modal
+- Rating (for eCommerce)
+- Toast/Notify/Snackbar
+- Simplified Grid
+  - grid-2: two items in a grid
+  - grid-3: three items
+- Slider
