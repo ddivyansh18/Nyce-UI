@@ -8,7 +8,7 @@ A contemporary and modern looking component library for all your CSS component n
 ```
 @import url("https://nyce-ui.vercel.app/nyce.css");
 ```
-- Nyce UI utilies material icons in many of its components, which can be imported as follows
+- Nyce UI utilizes material icons in many of its components, which can be imported as follows
 ```
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
