@@ -3,6 +3,9 @@
 # Nyce-UI 
 A contemporary and modern looking component library for all your CSS component needs.
 
+![image](https://user-images.githubusercontent.com/41231917/154948186-7961c036-936a-4c63-a30f-20319bb4014e.png)
+
+
 # Installation
 - Just add the following code as the first line in your css file, and that's it !
 ```
